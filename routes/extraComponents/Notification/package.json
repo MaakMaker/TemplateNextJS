@@ -1,0 +1,9 @@
+{
+  "name": "Notifications",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {
+    "react-notifications": "^1.4.3"
+  }
+}

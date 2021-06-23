@@ -1,0 +1,153 @@
+@import "../apps.css";
+
+/*Contact Apps Styles*/
+.gx-contact-item {
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 8px 28px;
+}
+.gx-contact-item:not(:last-child) {
+    border-bottom: solid 1px #e8e8e8;
+}
+.gx-dragndrop-item {
+    padding: 24px 16px;
+}
+.gx-dragndrop-item .gx-draggable-icon {
+    margin-left: -16px;
+}
+@media screen and (max-width: 575px) {
+    .gx-dragndrop-item {
+        padding-right: 5px;
+    }
+}
+.gx-contact-list-info {
+    padding-left: 10px;
+}
+.gx-contact-list-info .gx-email {
+    word-break: break-all;
+}
+.gx-contact-list-info .gx-toolbar-separator {
+    display: inline-block;
+}
+@media screen and (max-width: 575px) {
+    .gx-contact-list-info .gx-toolbar-separator {
+        display: none;
+    }
+}
+@media screen and (max-width: 575px) {
+    .gx-contact-list-info {
+        padding-left: 0;
+        max-width: calc(100% - 50px);
+    }
+    .gx-contact-list-info .gx-job-title {
+        display: none;
+    }
+}
+.gx-module-contact-content {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+.gx-module-contact-right {
+    margin-left: 8px;
+}
+.gx-contact-name {
+    font-size: 15px;
+}
+.gx-draggable-icon {
+    cursor: all-scroll;
+    color: #8c8c8c;
+}
+.gx-draggable-icon:hover,
+.gx-draggable-icon:focus,
+.gx-draggable-icon:active {
+    cursor: all-scroll;
+    color: #262626;
+}
+.gx-module-side-nav {
+    padding: 20px 0;
+}
+.gx-modal-box-row {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.gx-modal-box-row .gx-modal-box-avatar {
+    -webkit-order: 2;
+    -ms-order: 2;
+    order: 2;
+    margin-left: 16px;
+}
+.gx-modal-box-row .gx-modal-box-avatar .ant-avatar {
+    width: 120px;
+    height: 120px;
+}
+@media screen and (max-width: 575px) {
+    .gx-modal-box-row .gx-modal-box-avatar {
+        -webkit-order: 1;
+        -ms-order: 1;
+        order: 1;
+        margin-left: 0;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+}
+.gx-modal-box-row .gx-modal-box-form-item {
+    -webkit-order: 1;
+    -ms-order: 1;
+    order: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+@media screen and (max-width: 575px) {
+    .gx-modal-box-row .gx-modal-box-form-item {
+        -webkit-order: 2;
+        -ms-order: 2;
+        order: 2;
+    }
+}
+@media screen and (max-width: 575px) {
+    .gx-modal-box-row {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: -ms-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    }
+}
+.gx-dragndrop-actions {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}

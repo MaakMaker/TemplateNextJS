@@ -1,0 +1,9 @@
+/*Editor Styles*/
+.rdw-editor-toolbar .rdw-inline-wrapper {
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 399px) {
+    .rdw-editor-toolbar .rdw-inline-wrapper .rdw-option-wrapper {
+        margin-bottom: 8px;
+    }
+}

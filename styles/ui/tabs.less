@@ -1,0 +1,74 @@
+/*Tabs Styles*/
+.@{class-prefix}-tabs-half {
+  & .ant-tabs-bar {
+    margin-bottom: 0;
+  }
+
+  & .ant-tabs-nav {
+    display: block;
+
+    & .ant-tabs-tab {
+      margin: 0;
+      width: 50%;
+      text-align: center;
+      display: block;
+    }
+
+    & .ant-tabs-ink-bar {
+      width: 50%;
+    }
+  }
+}
+
+.@{class-prefix}-card-tabs {
+  & .ant-card-head-title {
+    text-transform: capitalize;
+    font-size: @font-size-lg;
+  }
+
+  & .ant-card-extra {
+    position: relative;
+    z-index: 2;
+  }
+
+  & .ant-tabs {
+    margin-top: -40px;
+
+    @media screen and (max-width: @screen-xs-max) {
+      margin-top: 0;
+    }
+  }
+
+  & .ant-tabs-tab {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 15px;
+  }
+
+  & .ant-tabs-tab-active {
+    font-weight: @font-weight-normal;
+  }
+
+  & .ant-tabs-nav-wrap {
+    .justify-content(center);
+    font-size: @font-size-lg;
+
+    @media screen and (max-width: @screen-xs-max) {
+      .justify-content(flex-start);
+    }
+  }
+
+  & .ant-card-body {
+    padding-top: @gx-card-padding-base - 20px;
+  }
+}
+
+.@{class-prefix}-tabs-right {
+  & .ant-tabs-nav-wrap {
+    .justify-content(flex-end);
+
+    @media screen and (max-width: @screen-xs-max) {
+      .justify-content(flex-start);
+    }
+  }
+}

@@ -1,0 +1,277 @@
+@import "../apps.css";
+
+/*Mails Apps Styles*/
+.gx-module-box-row {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.gx-module-box-column,
+.gx-module-list-content {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    width: 100%;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+.gx-mail-list-info {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    padding-left: 10px;
+    max-width: calc(100% - 150px);
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+@media screen and (max-width: 575px) {
+    .gx-mail-list-info {
+        max-width: 100%;
+        margin-top: 10px;
+        padding-left: 0;
+    }
+}
+.gx-mail-user-info {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    margin-left: 10px;
+}
+.gx-mail-user-info .gx-avatar {
+    margin-right: 10px;
+}
+.gx-mail-user-info .gx-badge {
+    margin-bottom: 0;
+}
+.gx-mail-user-des {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    margin-bottom: 3px;
+}
+.gx-mail-user-des .gx-time,
+.gx-mail-user-des .gx-icon-btn {
+    margin-left: auto;
+}
+.gx-mail-detail-inner {
+    padding: 24px;
+}
+@media screen and (max-width: 991px) {
+    .gx-mail-detail-inner {
+        padding-right: 28px;
+        padding-left: 28px;
+    }
+}
+.gx-mail-header {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+@media screen and (max-width: 498px) {
+    .gx-mail-header {
+        display: block;
+        -webkit-align-items: flex-start;
+        -ms-align-items: flex-start;
+        align-items: flex-start;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    }
+}
+.gx-mail-header-content {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+.gx-mail-header-content .gx-subject {
+    margin-bottom: 5px;
+}
+.gx-show-link {
+    cursor: pointer;
+    margin-bottom: 8px;
+    color: #038fde;
+}
+.gx-show-detail {
+    margin-bottom: 12px;
+}
+.gx-module-list-content .gx-subject {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.gx-module-list-content .gx-message {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    color: #8d8d8d;
+    font-size: 13px;
+}
+.gx-module-list-content .gx-message p {
+    margin-bottom: 8px;
+}
+.gx-size {
+    margin: 5px 0;
+}
+.gx-sender-name {
+    margin-right: 0;
+    font-weight: 500;
+    font-size: 15px;
+}
+.gx-send-subject {
+    width: calc(100% - 220px);
+}
+@media screen and (max-width: 575px) {
+    .gx-send-subject {
+        width: calc(100% - 180px);
+        margin-right: 6px;
+    }
+}
+.gx-mail-header-actions {
+    -webkit-justify-content: flex-end;
+    -ms-justify-content: flex-end;
+    justify-content: flex-end;
+    min-width: 100px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.gx-mail-header-actions .icon-btn:not(:last-child) {
+    margin-right: 3px;
+}
+@media screen and (max-width: 498px) {
+    .gx-mail-header-actions {
+        -webkit-justify-content: flex-start;
+        -ms-justify-content: flex-start;
+        justify-content: flex-start;
+        min-width: 10px;
+    }
+}
+.gx-attachment-block {
+    position: relative;
+}
+.gx-attachment-row {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+@media screen and (max-width: 575px) {
+    .gx-attachment-row {
+        margin: 0 -5px;
+    }
+}
+.gx-attachment-col {
+    padding: 0 10px;
+}
+.gx-attachment-col img {
+    width: 80px;
+}
+.gx-attachment-col .size {
+    padding-top: 5px;
+}
+@media screen and (max-width: 575px) {
+    .gx-attachment-col {
+        padding: 0 5px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .gx-mail-list {
+        -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        max-width: 100%;
+        border-right: 0 none;
+    }
+    .gx-mail-detail {
+        -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        max-width: 100%;
+    }
+}
